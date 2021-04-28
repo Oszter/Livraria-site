@@ -1,5 +1,6 @@
 ﻿using Alura.ListaLeitura.App.Negocio;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
@@ -16,7 +17,6 @@ namespace Alura.ListaLeitura.App
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("hosting.json", optional: false)
                 .Build();
-
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseConfiguration(config)
@@ -25,6 +25,8 @@ namespace Alura.ListaLeitura.App
                 .UseStartup<Startup>()
                 .Build();
             host.Run();
+
+            
         }
 
         static void ImprimeLista(ListaDeLeitura lista)
