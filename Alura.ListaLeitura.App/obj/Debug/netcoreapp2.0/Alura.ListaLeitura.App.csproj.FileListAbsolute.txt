@@ -1,0 +1,15 @@
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.deps.json
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.runtimeconfig.json
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.runtimeconfig.dev.json
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.dll
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.csprojAssemblyReference.cache
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.AssemblyInfo.cs
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.dll
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.genruntimeconfig.cache
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Repositorio\livros.csv
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\hosting.json
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Program.cs
