@@ -1,11 +1,13 @@
-﻿using Alura.ListaLeitura.App.Negocio;
+﻿using Alura.ListaLeitura.App.HTML.Utils;
+using Alura.ListaLeitura.App.Logica;
+using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,60 +17,26 @@ namespace Alura.ListaLeitura.App
     {
         public void Configure(IApplicationBuilder app)
         {
+            //criacao da variavel routeBuilder, template para defirnir rotas
             var routerBuilder = new RouteBuilder(app);
-            routerBuilder.MapRoute("livros/paraler", ParaLer);
-            routerBuilder.MapRoute("livros/lendo", Lendo);
-            routerBuilder.MapRoute("livros/lidos", Lidos);
-            routerBuilder.MapRoute("cadastro/novolivro/{titulo}/{autor}", NovoLivroParaLer);
-            routerBuilder.MapRoute("livros/detalhes/{id:int}", ExibeDetalhes);
+            //rotas existentes
+            routerBuilder.MapRoute("livros/paraler", LivrosLogica.ParaLer);
+            routerBuilder.MapRoute("livros/lendo", LivrosLogica.Lendo);
+            routerBuilder.MapRoute("livros/lidos", LivrosLogica.Lidos);
+            routerBuilder.MapRoute("cadastro/novolivro/{titulo}/{autor}", CadastroLogica.NovoLivroParaLer);
+            routerBuilder.MapRoute("livros/detalhes/{id:int}", LivrosLogica.ExibeDetalhes);
+            routerBuilder.MapRoute("cadastro/novolivro", LivrosLogica.ExibirFormulario);
+            routerBuilder.MapRoute("cadastro/incluir", LivrosLogica.ProcessaFormulario);
+            //construcao da rota
             var rotas = routerBuilder.Build();
+            //indicando template para uso de rotas
             app.UseRouter(rotas);
         }
 
-        private Task ExibeDetalhes(HttpContext context)
-        {
-            int id = Convert.ToInt32(context.GetRouteValue("id"));
-            var repo = new LivroRepositorioCSV();
-            var livro = repo.Todos.First(l => l.Id == id);
-            livro.Detalhes();
-            return context.Response.WriteAsync(livro.Detalhes());
-        }
-
-        private Task NovoLivroParaLer(HttpContext context)
-        {
-            var livro = new Livro
-            {
-                Titulo = Convert.ToString(context.GetRouteValue("titulo")),
-                Autor = Convert.ToString(context.GetRouteValue("autor"))
-            };
-
-            var repo = new LivroRepositorioCSV();
-            repo.Incluir(livro);
-            
-            return context.Response.WriteAsync("Livro Incluido com sucesso.");
-        }
-
+        //metodo necessario para criação de rotas
         public void ConfigureServices(IServiceCollection services)
         {   
             services.AddRouting();
-        }
-
-        public Task ParaLer(HttpContext context)
-        {
-            var _paraLer = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_paraLer.ParaLer.ToString());
-        }
-
-        public Task Lendo(HttpContext context)
-        {
-            var _paraLer = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_paraLer.Lendo.ToString());
-        }
-
-        public Task Lidos(HttpContext context)
-        {
-            var _paraLer = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_paraLer.Lidos.ToString());
         }
     }
 }
