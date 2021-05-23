@@ -3,12 +3,32 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\ExibeFormulario.cshtml" />
+    <Content Remove="Views\Livros\lendo.cshtml" />
+    <Content Remove="Views\Livros\lidos.cshtml" />
+    <Content Remove="Views\Livros\paraler.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Cadastro\ExibeFormulario.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Livros\lendo.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Livros\lidos.cshtml" />
+    <None Include="Views\Livros\paraler.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>

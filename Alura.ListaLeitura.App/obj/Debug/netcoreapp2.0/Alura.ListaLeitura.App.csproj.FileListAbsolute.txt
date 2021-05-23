@@ -13,3 +13,5 @@ C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.
 C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Repositorio\livros.csv
 C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\hosting.json
 C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Program.cs
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\Cadastro\ExibeFormulario.cshtml
+C:\Users\Rodrigo\Documents\Visual Studio 2019\Projects\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\Livros\lendo.cshtml

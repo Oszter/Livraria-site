@@ -1,11 +1,7 @@
-﻿using Alura.ListaLeitura.App.Negocio;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-
-using System;
 using System.IO;
+using System;
 
 namespace Alura.ListaLeitura.App
 {
@@ -25,13 +21,6 @@ namespace Alura.ListaLeitura.App
                 .UseStartup<Startup>()
                 .Build();
             host.Run();
-
-            
-        }
-
-        static void ImprimeLista(ListaDeLeitura lista)
-        {
-            Console.WriteLine(lista);
         }
     }
 }

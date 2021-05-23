@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
-namespace Alura.ListaLeitura.App.Negocio
+namespace Alura.ListaLeitura.App.Models
 {
     public class Livro
     {
